@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="800dp"
+        android:maxHeight="500dp"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/qing_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/top_corner"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:height="40dp"
+                    android:gravity="center_vertical|left"
+                    android:text="刷新"
+                    android:textColor="#000" />
+
+                <Switch
+                    android:id="@+id/open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="#000"
+                    android:textOff="关闭"
+                    android:textOn="打开" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:height="40dp"
+                android:gravity="center_vertical|left"
+                android:text="关于作者"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:height="40dp"
+                android:gravity="center_vertical|left"
+                android:text="CM天气 Version1.0 by MSY"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
